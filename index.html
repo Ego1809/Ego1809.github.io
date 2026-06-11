@@ -9,12 +9,12 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --bg: #0d0d0d;
+      --bg: #1e1e1e;
       --fg: #f0ece3;
       --accent: #2563eb;
-      --muted: #555;
-      --card: #161616;
-      --border: #2a2a2a;
+      --muted: #666;
+      --card: #252525;
+      --border: #333333;
     }
 
     html { scroll-behavior: smooth; }
@@ -41,7 +41,7 @@
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       padding: 1.4rem 2rem;
       display: flex; justify-content: space-between; align-items: center;
-      background: rgba(13,13,13,0.75);
+      background: rgba(30,30,30,0.75);
       backdrop-filter: blur(14px);
       border-bottom: 1px solid var(--border);
     }
@@ -175,7 +175,7 @@
       width: 3px; height: 0;
       background: var(--accent); transition: height 0.3s;
     }
-    .skill-group:hover { background: #1a1a1a; }
+    .skill-group:hover { background: #2c2c2c; }
     .skill-group:hover::before { height: 100%; }
     .skill-group-title {
       font-family: 'Syne', sans-serif; font-weight: 700;
@@ -206,7 +206,7 @@
       width: 3px; height: 0;
       background: var(--accent); transition: height 0.35s;
     }
-    .project-item:hover { background: #1a1a1a; }
+    .project-item:hover { background: #2c2c2c; }
     .project-item:hover::before { height: 100%; }
 
     .project-date {
@@ -367,8 +367,10 @@
         <h1>Alfred<br/><em>Planson</em></h1>
         <div class="hero-sub">Élève Ingénieur Jeux Vidéo — Game Programmer</div>
         <p class="hero-desc">
-          Passionné par le bas niveau, le rendu graphique et la physique temps-réel.
-          Je construis des moteurs, des outils et des expériences de jeu — du code jusqu'à la console.
+            Actuellement élève ingénieur jeux vidéo en troisiéme année, spécialisé en programmation, à ISART Digital,
+            je suis passionné par la création de jeux vidéo et d'outils.
+            Avec une solide expérience en C++ et C#, je suis a l'aise sur Unity et Unreal Engine, 
+            j'ai travaillé sur divers projets allant du développement de moteurs de jeu à la programmation de gameplay.
         </p>
         <div class="hero-meta">
           <div class="meta-item">📍 <span>75006 Paris, France</span></div>
@@ -388,8 +390,8 @@
   <section id="skills">
     <div class="container">
       <div class="reveal">
-        <div class="section-label">Compétences techniques</div>
-        <h2>Stack & outils</h2>
+        <div class="section-label">Hard Skills</div>
+        <h2>Compétences techniques</h2>
       </div>
       <div class="skills-grid reveal d1">
         <div class="skill-group">
@@ -461,37 +463,9 @@
 
         <div class="project-item reveal">
           <div class="project-header">
-            <div class="project-date">sept – oct 2025</div>
+              <div class="project-date">févr – mai 2025</div>
             <div>
-              <h3>Programmation Réseaux</h3>
-              <div class="proj-tags"><span class="proj-tag">C++</span></div>
-            </div>
-            <div class="project-chevron">▼</div>
-          </div>
-          <div class="project-details"><div class="project-details-inner">
-            <ul><li>Implémentation TCP via Socket.NET</li></ul>
-          </div></div>
-        </div>
-
-        <div class="project-item reveal">
-          <div class="project-header">
-            <div class="project-date">sept – oct 2025</div>
-            <div>
-              <h3>Moteur Physique</h3>
-              <div class="proj-tags"><span class="proj-tag">C++</span></div>
-            </div>
-            <div class="project-chevron">▼</div>
-          </div>
-          <div class="project-details"><div class="project-details-inner">
-            <ul><li>Implémentation de l'algorithme GJK (détection de collisions)</li></ul>
-          </div></div>
-        </div>
-
-        <div class="project-item reveal">
-          <div class="project-header">
-            <div class="project-date">fév – mai 2025</div>
-            <div>
-              <h3>Moteur et Éditeur de jeu</h3>
+              <h3>Moteur & Éditeur de jeu </h3>
               <div class="proj-tags">
                 <span class="proj-tag">C++</span>
                 <span class="proj-tag">OpenGL</span>
@@ -501,9 +475,93 @@
           </div>
           <div class="project-details"><div class="project-details-inner">
             <ul>
-              <li>Création TDD, recherche et documentation</li>
-              <li>Implémentation de bibliothèque externe</li>
-              <li>Implémentation API graphique</li>
+              <li>Développement d'un moteur de jeu complet avec éditeur intégré</li>
+              <li>Physique, rendu, et outils d'édition </li>
+              <li>Projet en équipe de 4 (Sandrin, Guillot, Izac, Planson)</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-header">
+            <div class="project-date">mai 2026</div>
+            <div>
+              <h3>Machine Learning</h3>
+              <div class="proj-tags">
+                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">C#</span>
+              </div>
+            </div>
+            <div class="project-chevron">▼</div>
+          </div>
+          <div class="project-details"><div class="project-details-inner">
+            <ul>
+              <li>Implémentation d'un réseau de neurones artificiel</li>
+              <li>Algorithme d'apprentissage par rétropropagation</li>
+              <li>Prédiction de probabilité d'attaque sur dataset de combat</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-header">
+            <div class="project-date">mai 2026</div>
+            <div>
+              <h3>Squad AI</h3>
+              <div class="proj-tags">
+                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">C#</span>
+              </div>
+            </div>
+            <div class="project-chevron">▼</div>
+          </div>
+          <div class="project-details"><div class="project-details-inner">
+            <ul>
+              <li>IA de NPCs en escouade combinant Behavior Tree et système Blackboard</li>
+              <li>Architecture modulaire avec Experts et Arbitre pour la prise de décision</li>
+              <li>Comportements : patrouille, formation, tir, soin, protection</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-header">
+            <div class="project-date">oct 2025</div>
+            <div>
+              <h3>Chess TCP</h3>
+              <div class="proj-tags">
+                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">C#</span>
+                <span class="proj-tag">.NET Sockets</span>
+              </div>
+            </div>
+            <div class="project-chevron">▼</div>
+          </div>
+          <div class="project-details"><div class="project-details-inner">
+            <ul>
+              <li>Multijoueur en réseau LAN via .NET Sockets uniquement</li>
+              <li>Architecture server-authoritative</li>
+              <li>Implémentation sur un template d'échecs existant en 3 semaines</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-header">
+            <div class="project-date">2025</div>
+            <div>
+              <h3>Moteur Physique</h3>
+              <div class="proj-tags">
+                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">C#</span>
+              </div>
+            </div>
+            <div class="project-chevron">▼</div>
+          </div>
+          <div class="project-details"><div class="project-details-inner">
+            <ul>
+              <li>Conception et implémentation d'un système de gestion des collisions 3D personnalisé</li>
+              <li>Environnement temps réel</li>
             </ul>
           </div></div>
         </div>
@@ -512,10 +570,10 @@
           <div class="project-header">
             <div class="project-date">nov – déc 2024</div>
             <div>
-              <h3>TPS Console</h3>
+              <h3>TPS Console — PS4</h3>
               <div class="proj-tags">
                 <span class="proj-tag">C++</span>
-                <span class="proj-tag">Unreal Engine</span>
+                <span class="proj-tag">Unreal Engine 5</span>
                 <span class="proj-tag">PS4</span>
               </div>
             </div>
@@ -523,30 +581,50 @@
           </div>
           <div class="project-details"><div class="project-details-inner">
             <ul>
-              <li>Recherche et documentation DevKit PS4</li>
-              <li>Programmation caméra, personnage et arme</li>
-              <li>Présentation technique</li>
+              <li>TPS multijoueur split-screen sur DevKit PS4</li>
+              <li>Gameplay : déplacement, visée, capture d'animaux, lancer</li>
+              <li>5 animaux avec comportements distincts — équipe de 4</li>
             </ul>
           </div></div>
         </div>
 
         <div class="project-item reveal">
           <div class="project-header">
-            <div class="project-date">mars – avr 2024</div>
+            <div class="project-date">2025</div>
             <div>
-              <h3>Jeu 2.5D</h3>
+              <h3>Resources Manager</h3>
               <div class="proj-tags">
-                <span class="proj-tag">C#</span>
-                <span class="proj-tag">Unity</span>
+                <span class="proj-tag">C++</span>
+                <span class="proj-tag">Multithreading</span>
               </div>
             </div>
             <div class="project-chevron">▼</div>
           </div>
           <div class="project-details"><div class="project-details-inner">
             <ul>
-              <li>Collaboration avec plusieurs autres filières</li>
-              <li>Programmation ennemis et plateformes</li>
-              <li>Implémentation du son</li>
+              <li>Chargement parallèle de ressources via multithreading</li>
+              <li>Gestion de l'alignement mémoire, synchronisation, deadlocks et data races</li>
+            </ul>
+          </div></div>
+        </div>
+
+        <div class="project-item reveal">
+          <div class="project-header">
+            <div class="project-date">2025</div>
+            <div>
+              <h3>Illumination PBR</h3>
+              <div class="proj-tags">
+                <span class="proj-tag">C#</span>
+                <span class="proj-tag">OpenGL 4.6</span>
+              </div>
+            </div>
+            <div class="project-chevron">▼</div>
+          </div>
+          <div class="project-details"><div class="project-details-inner">
+            <ul>
+              <li>Implémentation du modèle d'illumination global PBR sous OpenGL</li>
+              <li>Shaders Blinn-Phong et PBR avec paramètres modifiables</li>
+              <li>3 types de lumières instanciables, 2 modèles 3D</li>
             </ul>
           </div></div>
         </div>
@@ -574,19 +652,18 @@
 
       <div class="exp-list">
         <div class="exp-item reveal">
-          <div class="exp-date">Août 2024</div>
+          <div class="exp-date">Fév – Mars 2026</div>
           <div>
-            <div class="exp-role">Billetterie</div>
-            <div class="exp-company">Jardins d'Etretat — Etretat</div>
-            <div class="exp-desc">Vente de billets pour les Jardins d'Etretat.</div>
+            <div class="exp-role">Gameplay Programmer</div>
+            <div class="exp-company">4Nations FR</div>
+            <div class="exp-desc">Développement de plugins de gestion de tournoi pour un serveur RUST.</div>
           </div>
         </div>
         <div class="exp-item reveal">
-          <div class="exp-date">Août 2022</div>
+          <div class="exp-date">Divers</div>
           <div>
-            <div class="exp-role">Vendeur</div>
-            <div class="exp-company">Avenue V — Etretat</div>
-            <div class="exp-desc">Vente de fournitures.</div>
+            <div class="exp-role">Jobs étudiants</div>
+            <div class="exp-company">Vendeur · Billetier · Babysitter · Serveur</div>
           </div>
         </div>
       </div>
